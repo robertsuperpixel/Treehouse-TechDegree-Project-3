@@ -1,0 +1,59 @@
+/* Global ----------*/
+* {
+	box-sizing: border-box;
+}
+
+/* Typography ----------*/
+header h1 {
+	margin: 0;
+	padding: 20px 0;
+}
+
+#newsletter-form h2,
+#newsletter-form .sub-heading {
+	text-align: center;
+}
+
+
+/* Layout ----------*/
+header {
+	text-align: center;
+	background-color: #2d3945;
+	color: #fff; 
+}
+
+#main-wrapper {
+	max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#newsletter-form .sub-heading {
+	margin-bottom: 25px;
+}
+
+/* Form Attributes ----------*/
+fieldset,
+input {
+	/*border: none;*/
+
+}
+
+fieldset legend {
+	text-align: center;
+}
+
+label {
+	margin-bottom: 5px;
+    display: block;
+}
+
+input,
+select,
+textarea {
+	display: block;
+	padding: 10px 12px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
