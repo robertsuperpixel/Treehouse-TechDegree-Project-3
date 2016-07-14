@@ -55,9 +55,29 @@
 
 		<fieldset>
 			<legend>Newsletter</legend>
+				<p class="nl-heading">Select the newsletters you would like to receive
+					<input id="nl_1" type="checkbox" name="html_news" value="html news"><label for="nl_1">HTML News</label>
+					<input id="nl_2" type="checkbox" name="css_news" value="css news"><label for="nl_2">CSS News</label>
+					<input id="nl_3" type="checkbox" name="js_news" value="javascript news"><label for="nl_3">Javascript News</label>
+				</p>
+
+				<p class="nl-heading">Newletter
+					<input id="nlt_1" type="radio" name="html" value="html"><label for="nlt_1">HTML</label>
+					<input id="nlt_2" type="radio" name="plain" value="palin text"><label for="nlt_2">Plain Text</label>
+				</p>
+
+				<label for="topics">Other topics you'd like to hear about</label>
+				<textarea id="topics" name="other_topics"></textarea>
 		</fieldset>
+
+		<button type="submit" name="sign_up">Sign Up</button>
 	</form>
 </section>
+
+<footer>
+	<p>Copyright The Code Review</p>
+</footer>
+
 </div>
 
 </body>
