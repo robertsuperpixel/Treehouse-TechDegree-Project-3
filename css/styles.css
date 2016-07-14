@@ -4,14 +4,56 @@
 }
 
 /* Typography ----------*/
+body {
+	font-family: 'Merriweather', serif;
+	color: #46698b;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
 header h1 {
 	margin: 0;
 	padding: 20px 0;
+	text-transform: uppercase;
 }
 
 #newsletter-form h2,
 #newsletter-form .sub-heading {
 	text-align: center;
+}
+
+#newsletter-form h2,
+fieldset legend {
+	color: #404040;
+}
+
+fieldset legend {
+	text-align: left;
+	font-size: 1.3em;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+label {
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+.nl-heading {
+	margin-bottom: 20px;
+}
+
+.nl-heading p {
+	font-size: 0.9em;
+	margin-bottom: 12px;
+}
+
+footer {
+	font-size: 0.9em;
+	font-style: italic;
 }
 
 
@@ -24,7 +66,7 @@ header {
 
 #main-wrapper {
 	max-width: 960px;
-	padding: 0;
+	padding: 20px;
 	margin: 0 auto;
 }
 
@@ -33,27 +75,86 @@ header {
 }
 
 /* Form Attributes ----------*/
-fieldset,
-input {
-	/*border: none;*/
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
 
-}
-
-fieldset legend {
-	text-align: center;
 }
 
 label {
-	margin-bottom: 5px;
     display: block;
+    padding-left: 20px;
+    text-indent: -20px;
 }
 
 input,
 select,
 textarea {
 	display: block;
-	padding: 10px 12px;
 	margin-bottom: 15px;
 	width: 100%;
+	background-color: #eff0f1;
+	border-radius: 4px;
+	border-style: none;
+	padding: 16px 12px;
+	font-size: 14px;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+	width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0 10px 0 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline-color: #46698b;
+}
+
+textarea {
+	min-height: 180px;
+	margin-bottom: 30px;
+}
+
+button#submission {
+	display: block;
+    width: 100%;
+    background-color: #4ebbb5;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+	text-align: right;
+	padding-right: 10px;
+	font-style: italic;
+}
+
+::-moz-placeholder {
+	text-align: right;
+	padding-right: 10px;
+	font-style: italic;
+}
+
+:-moz-input-placeholder {
+	text-align: right;
+	padding-right: 10px;
+	font-style: italic;
+}
+
+/* Footer ----------*/
+footer {
+	text-align: center;
+	padding: 25px 0 0;
+}
